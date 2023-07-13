@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/registros.css">
+    <link rel="icon" class="icon1" type="image/x-icon" href="imagenes/ISOTIPO.png">
+	
+</head>
+
+<body>
+    <main class="main">
+        <form class="formulario" id="formulario" action="formulario.php" method="post">
+            <div class="formulario__grupo" id="grupo__nombreEmpresa">
+                <label for="nombreEmpresa" class="formulario__label">Nombre de la Empresa</label>
+                <input type="text" class="formulario__input" name="nombreEmpresa" id="nombreEmpresa" placeholder="Nombre de la Empresa" required>
+                <i class="formulario__validacion-estado fas"></i>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__nombreContacto">
+                <label for="nombreContacto" class="formulario__label">Nombre de Contacto</label>
+                <input type="text" class="formulario__input" name="nombreContacto" id="nombreContacto" placeholder="Nombre de Contacto" required>
+                <i class="formulario__validacion-estado fas"></i>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__tipoEmpresa">
+                <label for="tipoEmpresa" class="formulario__label">Tipo de Requerimiento</label>
+                <select class="formulario__input" name="tipoEmpresa" id="tipoEmpresa" required>
+                    <option value="">Seleccionar</option>
+                    <option value="nuevaInstalacion">Nueva instalación</option>
+                    <option value="adicionServicio">Adición de servicio</option>
+                    <option value="incrementoEquipamiento">Incremento de equipamiento</option>
+                </select>
+                <i class="formulario__validacion-estado fas"></i>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" required>
+                <i class="formulario__validacion-estado"></i>
+            </div>
+
+            <div class="formulario__grupo">
+                <label for="detalleCaso" class="formulario__label">Coméntanos tu caso con más detalle</label>
+                <textarea class="formulario__input" name="detalleCaso" id="detalleCaso" rows="4" placeholder="Escribe aquí tu caso"></textarea>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn" id="btnEnviar">Enviar</button>
+            </div>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <a href="index.html" class="volver__btn">Inicio</a>
+            </div>
+			<script src="formulario.js"></script>
+        </form>

@@ -24,7 +24,7 @@ $sql = "INSERT INTO clientes (nombre_empresa, nombre_contacto, tipo_requerimient
 
 if ($conn->query($sql) === TRUE) {
     echo "Los datos se han guardado correctamente en la base de datos";
-    echo '<meta http-equiv="refresh" content="5;url=index.html">';
+    echo '<meta http-equiv="refresh" content="3;url=index.html">';
 } else {
     echo "Error al guardar los datos en la base de datos: " . $conn->error;
 }
